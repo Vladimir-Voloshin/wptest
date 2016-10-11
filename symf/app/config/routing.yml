@@ -1,3 +1,5 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+get_numbers_multiplication:
+    path:     /api/multiplication
+    defaults: { _controller: AppBundle:Numbers:multiplication }
+    requirements:
+        _method: POST
